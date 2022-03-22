@@ -1,0 +1,6 @@
+$ Loads for Load Case : Untitled.SC1
+$ Displacement Constraints of Load Set : spc1.1
+SPC1     1       123456  1323    1324    1325    2041    3736    7567
+         7604
+SPC1     1       123456  8033    THRU    8043
+$ Referenced Coordinate Frames
