@@ -12,6 +12,7 @@ This repository stores the data associated with U-M publications resulting from 
 * `06_Static_Torsion`: Static torsion results due to a tip mass behind the trailing egde point 
 * `07_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
 * `08_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
+* `09_Nonlinear_Flutter`: Nonlinear flutter analysis for AoA = 0 -> 7 deg
 
 The built-up finite element models with flexible tip rod were originally provided by Prof. Daniella Raveh (Technion). Variants with rigid tip rod were developed at U-M to ease the equivalent beam modeling.
 
