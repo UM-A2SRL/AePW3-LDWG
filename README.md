@@ -20,16 +20,4 @@ If you use these results, please cite our paper:
 
 Riso, C. and Cesnik, C. E. S., "Low-Order Geometrically Nonlinear Aeroelastic Modeling and Analysis of the Pazy Wing Experiment," AIAA SciTech Forum, San Diego, CA and Online, January 2-7, 2022. AIAA-2022-2313. DOI: https://doi.org/10.2514/6.2022-2313. 
 
-@inproceedings{Riso2022,
-	author    = {Cristina Riso and Carlos E. S. Cesnik},
-	title     = {Low-Order Geometrically Nonlinear Aeroelastic Modeling and Analysis of the Pazy Wing Experiment},
-	booktitle = {AIAA SciTech Forum},
-	address   = {San Diego, CA and Online},
-	year      = {2022},
-	month     = {January 2--7},
-	pages     = {1--30},
-	note      = {AIAA-2022-231},
-	doi       = {10.2514/6.2022-231},
-}
-
 Contacts: Cristina Riso (criso@gatech.edu) and Carlos E. S. Cesnik (cesnik@umich.edu)
