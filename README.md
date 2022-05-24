@@ -16,8 +16,23 @@ This repository stores the data associated with U-M publications resulting from 
 
 The built-up finite element models with flexible tip rod were originally provided by Prof. Daniella Raveh (Technion). Variants with rigid tip rod were developed at U-M to ease the equivalent beam modeling.
 
-If you use these results, please cite our paper:
+## Folders associated with Riso and Cesnik, IFASD, 2022 (to appear):
+
+* `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
+* `02_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
+* `03_Nonlinear_Flutter`: Nonlinear flutter analysis for AoA = 0 -> 7 deg
+* `04_Dynamic_Aeroelastic`: Nonlinear flutter analysis for AoA = 5, 7 deg
+
+The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
+
+## References 
+
+If you use these results, please cite our papers as appropriate:
 
 Riso, C. and Cesnik, C. E. S., "Low-Order Geometrically Nonlinear Aeroelastic Modeling and Analysis of the Pazy Wing Experiment," AIAA SciTech Forum, San Diego, CA and Online, January 2-7, 2022. AIAA-2022-2313. DOI: https://doi.org/10.2514/6.2022-2313. 
 
-Contacts: Cristina Riso (criso@gatech.edu) and Carlos E. S. Cesnik (cesnik@umich.edu)
+Riso, C. and Cesnik, C. E. S., "Post-Flutter Dynamics of the Pazy Wing Geometrically Nonlinear Benchmark Model," IFASD, Madrid, Spain, June 13-17, 2022. IFASD-2022-073. To appear. 
+
+## Contacts 
+
+Cristina Riso (criso@gatech.edu) and Carlos E. S. Cesnik (cesnik@umich.edu)
