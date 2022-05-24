@@ -1,6 +1,6 @@
-Results for the nonlinear flutter analysis of the deformed configuration as reported in Riso and Cesnik, AIAA SciTech Forum, 2022. 
+Results for the nonlinear flutter analysis of the deformed configuration as reported in Riso and Cesnik, IFASD, 2022. 
 
-All results are based on the UM/NAST model with tip loss factor tuned based on the UM/NAST-VLM model.
+All results are based on the new UM/NAST model with spanwise variable aerodynamic coefficient derivatives from the Technion data.
 
 All results are for the case with skin without the tip mass and without weight.
 
