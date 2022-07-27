@@ -2,7 +2,7 @@
 
 This repository stores the data associated with U-M publications resulting from the Third Aeroelastic Prediction Workshop Large Deflection Working Group.
 
-## Folders associated with Riso and Cesnik, AIAA SciTech Forum, 2022:
+## Folders associated with Riso and Cesnik, AIAA SciTech Forum, 2022 (also Riso and Cesnik, Journal of Aircraft, under review):
 
 * `01_Models_GFEM`: Built-up finite element models for MSC Nastran  
 * `02_Models_Beam`: Equivalent beam inertia and stiffness distributions for UM/NAST 
