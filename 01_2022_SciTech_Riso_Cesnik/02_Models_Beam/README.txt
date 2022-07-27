@@ -45,3 +45,6 @@ For details about how these properties were obtained, see Riso and Cesnik, AIAA 
 Plots of the properties are given in Appendix of Riso and Cesnik, AIAA SciTech Forum, 2022 and Riso and Cesnik, Journal of Aircraft, 2022, under revision.
 
 The properties are also available for download from the AePW3-LDWG website.
+
+The publications Riso and Cesnik, AIAA SciTech Forum, 2022 and Riso and Cesnik, Journal of Aircraft, 2022, under revision contain additional cases of beam properties obtained using different condensation parameters.
+These cases were considered during a sensitivity study that led to the final beam properties reported here. We have not added the intermediate properties and related modal results to the repository, but we can provide them upon request.
