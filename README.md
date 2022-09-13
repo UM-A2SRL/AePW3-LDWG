@@ -1,20 +1,29 @@
 # AePW3-LDWG
 
-This repository stores the data associated with U-M publications resulting from the Third Aeroelastic Prediction Workshop Large Deflection Working Group.
+This repository stores the data associated with our publications resulting from the Third Aeroelastic Prediction Workshop Large Deflection Working Group.
+
+## Wing models
+
+* `01_Pazy_Technion`: Pazy wing version from Technion (this model is used in the Riso and Cesnik publications)
+* `02_Pazy_TU_Delft`: Pazy wing version from TU Delft     
+
+The model folders contain the Nastran GFEMs along with the equivalent beam properties used in our analyses.
+
+The built-up finite element models of the Technion Pazy wing with flexible tip rod were originally provided by Prof. Daniella Raveh (Technion). Variants with rigid tip rod were developed by us to ease the equivalent beam modeling.
+
+The built-up finite element model of the TU Delft Pazy wing with flexible tip rod was originally provided by Christoph Mertens (TU Delft). Again, rigid-tip variants were developed by us to ease the equivalent beam modeling.
+
+Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its properties are tuned based on the GVT of the Pazy wing model with skin tested at TU Delft. 
 
 ## Folders associated with Riso and Cesnik, AIAA SciTech Forum, 2022 (also Riso and Cesnik, Journal of Aircraft, under review):
 
-* `01_Models_GFEM`: Built-up finite element models for MSC Nastran  
-* `02_Models_Beam`: Equivalent beam inertia and stiffness distributions for UM/NAST 
-* `03_Modal_Undeformed`: Modal results in undeformed shape 
-* `04_Modal_Gravity`: Modal results in statically deformed shape under self weight 
-* `05_Static_Bending`: Static bending results due to a tip mass at the midchord point 
-* `06_Static_Torsion`: Static torsion results due to a tip mass behind the trailing egde point 
-* `07_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
-* `08_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
-* `09_Nonlinear_Flutter`: Nonlinear flutter analysis for AoA = 0 -> 7 deg
-
-The built-up finite element models with flexible tip rod were originally provided by Prof. Daniella Raveh (Technion). Variants with rigid tip rod were developed at U-M to ease the equivalent beam modeling.
+* `01_Modal_Undeformed`: Modal results in undeformed shape 
+* `02_Modal_Gravity`: Modal results in statically deformed shape under self weight 
+* `03_Static_Bending`: Static bending results due to a tip mass at the midchord point 
+* `04_Static_Torsion`: Static torsion results due to a tip mass behind the trailing egde point 
+* `05_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
+* `06_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
+* `07_Nonlinear_Flutter`: Nonlinear flutter analysis for AoA = 0 -> 7 deg
 
 ## Folders associated with Riso and Cesnik, IFASD, 2022 (to appear):
 
@@ -27,11 +36,13 @@ The beam model used for these results is the same as for Riso and Cesnik, AIAA S
 
 ## References 
 
-If you use these results, please cite our papers as appropriate:
+If you use the Technion Pazy wing model properties and related analysis results, please cite our papers as appropriate:
 
 Riso, C. and Cesnik, C. E. S., "Low-Order Geometrically Nonlinear Aeroelastic Modeling and Analysis of the Pazy Wing Experiment," AIAA SciTech Forum, San Diego, CA and Online, January 2-7, 2022. AIAA-2022-2313. DOI: https://doi.org/10.2514/6.2022-2313. 
 
 Riso, C. and Cesnik, C. E. S., "Post-Flutter Dynamics of the Pazy Wing Geometrically Nonlinear Benchmark Model," IFASD, Madrid, Spain, June 13-17, 2022. IFASD-2022-073. To appear. 
+
+If you use the TU Delft Pazy wing  model properties, please cite this repository as the source.
 
 ## Contacts 
 

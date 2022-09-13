@@ -1,0 +1,518 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2021 MSC Software Corporation and its licensors. All rights reserved.         
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           MSC Software          * *
+                                              * *               CORP              * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *     Version 2021.1-CL797725     * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          MAR 10, 2021           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *MODEL Xeon/7714 (ae-crrg-307070l * *
+                                              * * Windows 10 Enterprise 6.2 9200  * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+1News file - (February 22, 2021)
+  
+               Welcome to MSC Nastran 2021.1
+  
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions.
+  
+     MSC Nastran 2021.1 Features and Enhancements
+  
+     Statics
+     The original SOL 1 (Legacy Linear Statics solution) Inertia Relief method,
+     allowing for more than six rigid body modes is now available in SOL 101
+     (Linear Statics)
+  
+     Dynamics
+     Real Coupled Modes enhancements:
+      - Supported for AVL Excite EXB Export and acoustic weakly-coupled modes
+      - Residual vector logic tuned up for improved solution accuracy
+        in transient response analysis
+  
+     Fatigue
+     CAE Fatigue Time Domain completeness
+      - Hot Spot detection for computational speed
+      - Spot Weld fatigue analyzer
+  
+     Nonlinear
+     Enhanced accelerated separation check in node-to-segment (N2S) contact
+  
+     Design Optimization
+     - Design response screening option added to force retention of all
+       defined responses in the model
+  
+     High Performance Computing
+     - Improved MUMPS direct solver performance in SOL 101 linear statics
+  
+     Documentation
+     The complete documentation set is provided in a separate installer and
+     when installed is available at: MSC_DOC_DIR/doc/pdf_nastran directory.
+     Where MSC_DOC_DIR is the directory where documentation was installed
+     This help set has cross references between documents, links to how-to
+     videos, and example files.
+  
+     Individual MSC Nastran documents are available for download from the
+       Simcompanion Website at:
+       http://simcompanion.mscsoftware.com/
+  
+     These documents were updated for the MSC Nastran 2021.1 Release
+  
+         1.  MSC Nastran 2021.1 Installation and Operations Guide
+         2.  MSC Nastran 2021.1 Quick Reference Guide
+         3.  MSC Nastran 2021.1 Release Guide
+         4.  MSC Nastran 2021.1 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2021.1 Dynamic Analysis User's Guide
+         6.  MSC Nastran 2021.1 Superelements User's Guide
+         7.  MSC Nastran 2021.1 Rotordynamics User's Guide
+         8.  MSC Nastran 2021.1 Demonstration Problems Manual
+         9.  MSC Nastran 2021.1 Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2021.1 Design Sensitivity and Optimization
+        11.  MSC Nastran 2021.1 Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2021.1 DMAP Programmer's Guide
+        13.  MSC Nastran 2021.1 High Performance Computing User's Guide
+        14.  MSC Nastran 2021.1 New Verification Manual
+        15.  MSC Nastran 2021.1 DEMATD Guide
+        16.  MSC Nastran 2021.1 Explicit Nonlinear (SOL 700) User's Guide
+  
+   Please refer to  MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+   for the complete document set:
+  
+  
+     Feature Deprecation List
+     To streamline the MSC Nastran program and simplify ongoing maintenance
+     activiy, some obsolete capabilities have been identified and tagged for
+     removal from a future release of the program in late 2021 and 2022.
+     Please review the list of features marked for deprecation below to
+     ensure that there will be no disruption to your use of MSC Nastran.
+     If you see a feature that you currently use and do not wish to lose,
+     contact MSC Technical Support to report it.
+  
+     Features tagged for removal:
+     - P-elements
+     - SOL 600 nonlinear solution sequence
+     - Unstructured one- and two-digit solution sequences (e.g. SOL 3, SOL 24)
+     - SOL 190 (DBTRANS)
+     - TAUCS solver
+     - MSGMESH
+     - Obsolete DMAP modules
+     - SSSALTERS
+  
+     Refer to the MSC Nastran 2021 Release Guide for more details.
+  
+  
+   Additional information about the release can be found at the MSC Nastran
+   Product Support page: http://simcompanion.mscsoftware.com
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      http://www.mscsoftware.com/Contents/Services/Training/
+  
+1                                                                         SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     $ SYSFIELD=SCR*(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(C:/PROGRAM FILES/MSC.SO
+     $ SYSFIELD=DBALL(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(C:/PROGRAM FILES/MSC.S
+     NASTRAN BUFFSIZE=32769 $(C:/PROGRAM FILES/MSC.SOFTWARE/MSC_NASTRAN/2021.1/CONF/N
+     NASTRAN NLINES=999999                                                           
+     NASTRAN,BARMASS=1,SYSTEM(444)=9                                                 
+     $                                                                               
+1                                                                         SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     SOL 101                                                                                 
+     $                                                                                       
+     CEND                                                                                    
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $                                                                                       
+                  2      SET 1 = 80000001 THRU 80000080                                                          
+                  3      ECHO = NONE                                                                             
+                  4      TITLE = STATIC ANALYSIS                                                                 
+                  5      DISPLACEMENT(SORT1,REAL) = 1                                                            
+                  6      RIGID = LAGRAN                                                                          
+                  7      $                                                                                       
+                  8      SPC = 1                                                                                 
+                  9      SUBCASE 1                                                                               
+                 10        LOAD = 1001                                                                           
+                 11      SUBCASE 2                                                                               
+                 12        LOAD = 1002                                                                           
+                 13      SUBCASE 3                                                                               
+                 14        LOAD = 1003                                                                           
+                 15      SUBCASE 4                                                                               
+                 16        LOAD = 1004                                                                           
+                 17      SUBCASE 5                                                                               
+                 18        LOAD = 1005                                                                           
+                 19      SUBCASE 6                                                                               
+                 20        LOAD = 1006                                                                           
+                 21      $                                                                                       
+                 22      BEGIN BULK                                                                              
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                              I N P U T   B U L K   D A T A   E C H O                                               
+                 ENTRY                                                                                                              
+                 COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\FEM.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\FEM.BDF"
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\BCS.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\BCS.BDF"
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\REFERENCE_AXIS_GRIDS.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\REFERENCE_AXIS_GRIDS.BDF"
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\REFERENCE_AXIS_RBE3S_MODIFIED.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\REFERENCE_AXIS_RBE3S_MODIFIED.BDF"
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\TIP_STIF.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\TIP_STIF.BDF"
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\TIP_LOAD.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\TIP_LOAD.BDF"
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                        CBEAM                      937
+                                       CQUAD4                     1938
+                                       CTRIA3                      152
+                                        FORCE                        3
+                                         GRID                     3066
+                                         MAT1                        3
+                                       MDLPRM                        1
+                                       MOMENT                        3
+                                        PARAM                        3
+                                        PBEAM                       14
+                                       PSHELL                        3
+                                         RBE2                      103
+                                         RBE3                       16
+                                         SPC1                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+                           O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
+0                                                     REFERENCE POINT =        0
+                                                                M O
+                      *  2.870035E-01  1.485125E-21  2.504041E-20  5.254949E-21 -8.352750E-06 -8.923441E-02 *
+                      *  1.485125E-21  2.870035E-01  6.623907E-24  8.352750E-06 -5.168320E-25  1.263094E-02 *
+                      *  2.504041E-20  6.623907E-24  2.870035E-01  8.923441E-02 -1.263094E-02 -5.254429E-21 *
+                      *  5.254949E-21  8.352750E-06  8.923441E-02  3.619862E-02 -3.943268E-03  2.066033E-07 *
+                      * -8.352750E-06 -5.168320E-25 -1.263094E-02 -3.943268E-03  8.256769E-04  3.454843E-06 *
+                      * -8.923441E-02  1.263094E-02 -5.254429E-21  2.066033E-07  3.454843E-06  3.702021E-02 *
+                                                                 S
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+                               DIRECTION
+                          MASS AXIS SYSTEM (S)     MASS              X-C.G.        Y-C.G.        Z-C.G.
+                                  X            2.870035E-01      1.830970E-20  3.109175E-01 -2.910330E-05
+                                  Y            2.870035E-01      4.400970E-02 -1.800786E-24 -2.910330E-05
+                                  Z            2.870035E-01      4.400970E-02  3.109175E-01 -1.830789E-20
+                                                                I(S)
+                                           *  8.454089E-03  1.608758E-05  1.609988E-07 *
+                                           *  1.608758E-05  2.697927E-04 -8.578276E-07 *
+                                           *  1.609988E-07 -8.578276E-07  8.719796E-03 *
+                                                                I(Q)
+                                           *  8.719796E-03                             *
+                                           *                2.697610E-04               *
+                                           *                              8.454121E-03 *
+                                                                 Q
+                                           *  6.121437E-04  1.965653E-03  9.999979E-01 *
+                                           * -1.026834E-04  9.999981E-01 -1.965591E-03 *
+                                           * -9.999998E-01 -1.014800E-04  6.123444E-04 *
+
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    1.000000E+00     ----          ----          ----       0.000000E+00 -5.519937E-01                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  1.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00 -5.519937E-01
+0        2     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       1.000000E+00     ----       0.000000E+00     ----       4.358900E-02                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  1.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  4.358900E-02
+0        3     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       1.000000E-02  5.519937E-03 -4.358900E-04     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  1.000000E-02  5.519937E-03 -4.358900E-04  0.000000E+00
+0        4     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       1.000000E-02     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  1.000000E-02  0.000000E+00  0.000000E+00
+0        5     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       1.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  1.000000E+00  0.000000E+00
+0        6     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       1.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  1.000000E+00
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     9
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+  
+ *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
+     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    1.452228E+05
+ *** USER WARNING MESSAGE 4698 (DCMPD)
+     STATISTICS FOR DECOMPOSITION OF MATRIX KLL.
+     THE FOLLOWING DEGREES OF FREEDOM HAVE FACTOR DIAGONAL RATIOS GREATER THAN
+     1.000000E+07 OR HAVE NEGATIVE TERMS ON THE FACTOR DIAGONAL.
+     USER INFORMATION:
+     THIS MESSAGE MAY BE IGNORED IF NO GRID POINT IDS OR HIGH RATIO MESSAGES APPEAR IN THE TABLE ON THE NEXT PAGE.
+ *** USER INFORMATION MESSAGE 5293 (SSG3A)
+    FOR DATA BLOCK KLL     
+    LOAD SEQ. NO.             EPSILON              EXTERNAL WORK      EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
+                1         -6.3215455E-12          1.1630451E-05
+                2         -1.8676848E-13          3.8803542E-08
+                3         -9.5439149E-09          1.1402230E-06
+                4         -4.2935350E-09          1.1325591E-05
+                5          8.6710311E-10          7.2047153E-02
+                6         -5.3435514E-12          1.1337636E-04
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    10
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+ 
+                                             D I S P L A C E M E N T   V E C T O R
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+      80000001      G     -1.423686E-11  -1.482741E-09  -9.705712E-14   2.936470E-05   5.448034E-12  -1.110179E-07
+      80000002      G      1.874545E-07   4.550020E-08   5.513870E-09   2.831047E-07   1.113501E-08  -8.499190E-06
+      80000003      G      6.806032E-07   8.906446E-08   2.201305E-08   5.615432E-07   2.661520E-08  -1.637916E-05
+      80000004      G      1.463001E-06   1.290441E-07   4.928083E-08   8.388415E-07   5.358255E-08  -2.363099E-05
+      80000005      G      2.510688E-06   1.655072E-07   8.691515E-08   1.098147E-06   8.948816E-08  -3.025830E-05
+      80000006      G      3.799866E-06   1.984761E-07   1.342820E-07   1.342461E-06   1.298136E-07  -3.626355E-05
+      80000007      G      5.306808E-06   2.279674E-07   1.907136E-07   1.569106E-06   1.737638E-07  -4.164840E-05
+      80000008      G      7.007836E-06   2.539916E-07   2.554898E-07   1.777170E-06   2.196778E-07  -4.641387E-05
+      80000009      G      8.879300E-06   2.765528E-07   3.278666E-07   1.966269E-06   2.659027E-07  -5.056035E-05
+      80000010      G      1.089755E-05   2.956490E-07   4.070961E-07   2.136591E-06   3.107731E-07  -5.408766E-05
+      80000011      G      1.303892E-05   3.112724E-07   4.924486E-07   2.288910E-06   3.525793E-07  -5.699502E-05
+      80000012      G      1.527971E-05   3.234084E-07   5.832333E-07   2.424566E-06   3.894488E-07  -5.928100E-05
+      80000013      G      1.759615E-05   3.320357E-07   6.788274E-07   2.546141E-06   4.191639E-07  -6.094352E-05
+      80000014      G      1.996438E-05   3.371271E-07   7.787470E-07   2.658990E-06   4.412419E-07  -6.197969E-05
+      80000015      G      2.206026E-05   3.386822E-07   8.694201E-07   2.747271E-06   4.549351E-07  -6.237100E-05
+      80000016      G      2.326090E-05   3.385773E-07   9.224109E-07   2.794246E-06   4.551764E-07  -6.239609E-05
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    11
+                                                                                                                                    
+0                                                                                                            SUBCASE 2              
+ 
+                                             D I S P L A C E M E N T   V E C T O R
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+      80000001      G     -7.022552E-13   2.004958E-11   1.863343E-16  -3.970685E-07  -3.403262E-14   1.501180E-09
+      80000002      G      1.561436E-09   5.315085E-09  -1.628065E-11  -8.318455E-10  -2.336355E-11  -8.321500E-08
+      80000003      G      6.400820E-09   1.072065E-08  -6.374792E-11  -1.586459E-09   1.623836E-12  -1.695363E-07
+      80000004      G      1.453133E-08   1.613595E-08  -1.249031E-10  -1.651108E-09  -2.089630E-11  -2.555722E-07
+      80000005      G      2.595243E-08   2.155140E-08  -2.056447E-10  -2.550751E-09  -3.136352E-11  -3.415992E-07
+      80000006      G      4.066397E-08   2.696677E-08  -3.200440E-10  -3.426440E-09  -4.348106E-11  -4.276244E-07
+      80000007      G      5.866589E-08   3.238211E-08  -4.679959E-10  -4.305898E-09  -4.866209E-11  -5.136477E-07
+      80000008      G      7.995813E-08   3.779744E-08  -6.495531E-10  -5.185239E-09  -5.088133E-11  -5.996697E-07
+      80000009      G      1.045407E-07   4.321276E-08  -8.646844E-10  -6.063337E-09  -4.997763E-11  -6.856911E-07
+      80000010      G      1.324135E-07   4.862809E-08  -1.113339E-09  -6.939972E-09  -4.573063E-11  -7.717127E-07
+      80000011      G      1.635766E-07   5.404343E-08  -1.395453E-09  -7.814753E-09  -3.796522E-11  -8.577351E-07
+      80000012      G      1.980300E-07   5.945882E-08  -1.710937E-09  -8.686617E-09  -2.600992E-11  -9.437585E-07
+      80000013      G      2.357738E-07   6.487428E-08  -2.059670E-09  -9.555860E-09  -7.228802E-12  -1.029782E-06
+      80000014      G      2.768082E-07   7.028595E-08  -2.441863E-09  -1.045225E-08   2.531662E-12  -1.115910E-06
+      80000015      G      3.154114E-07   7.500616E-08  -2.803905E-09  -1.113108E-08  -5.518191E-11  -1.192084E-06
+      80000016      G      3.385773E-07   7.760708E-08  -3.020361E-09  -1.159436E-08  -1.039106E-11  -1.232991E-06
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    12
+                                                                                                                                    
+0                                                                                                            SUBCASE 3              
+ 
+                                             D I S P L A C E M E N T   V E C T O R
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+      80000001      G      2.252235E-14  -6.134588E-13  -2.989295E-11   1.214914E-08   1.819636E-09  -4.593174E-11
+      80000002      G      5.888470E-11  -1.114138E-12   1.577668E-06   8.212213E-05   7.188917E-07  -2.961088E-09
+      80000003      G      2.241072E-10  -5.304831E-12   6.219362E-06   1.596786E-04   8.741183E-07  -5.706245E-09
+      80000004      G      4.970532E-10  -4.983142E-12   1.371985E-05   2.315195E-04   8.562258E-07  -8.462264E-09
+      80000005      G      8.734440E-10  -7.652527E-12   2.385372E-05   2.973577E-04   8.806183E-07  -1.107475E-08
+      80000006      G      1.346998E-09  -1.028317E-11   3.638994E-05   3.571363E-04   9.201609E-07  -1.352627E-08
+      80000007      G      1.911074E-09  -1.283550E-11   5.109686E-05   4.108594E-04   9.611275E-07  -1.579832E-08
+      80000008      G      2.558526E-09  -1.527987E-11   6.774291E-05   4.585287E-04   1.002036E-06  -1.788092E-08
+      80000009      G      3.281948E-09  -1.760718E-11   8.609654E-05   5.001444E-04   1.042888E-06  -1.977005E-08
+      80000010      G      4.073887E-09  -1.981816E-11   1.059262E-04   5.357064E-04   1.083678E-06  -2.146741E-08
+      80000011      G      4.927065E-09  -2.192262E-11   1.270003E-04   5.652147E-04   1.124425E-06  -2.298058E-08
+      80000012      G      5.834602E-09  -2.394110E-11   1.490874E-04   5.886693E-04   1.165342E-06  -2.432351E-08
+      80000013      G      6.790274E-09  -2.591606E-11   1.719557E-04   6.060681E-04   1.205918E-06  -2.551706E-08
+      80000014      G      7.788805E-09  -2.788205E-11   1.953737E-04   6.174062E-04   1.236167E-06  -2.659113E-08
+      80000015      G      8.694462E-09  -2.943414E-11   2.161329E-04   6.223387E-04   1.232558E-06  -2.746618E-08
+      80000016      G      9.224110E-09  -3.020361E-11   2.280446E-04   6.230675E-04   1.225760E-06  -2.792878E-08
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    13
+                                                                                                                                    
+0                                                                                                            SUBCASE 4              
+ 
+                                             D I S P L A C E M E N T   V E C T O R
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+      80000001      G      3.917235E-14  -1.493459E-12  -5.460659E-11   2.957695E-08   3.323998E-09  -1.118203E-10
+      80000002      G      1.422538E-10  -5.231270E-12   2.938231E-06   1.548086E-04   1.330635E-06  -7.188720E-09
+      80000003      G      5.445961E-10  -1.623522E-11   1.186941E-05   3.123535E-04   1.565540E-06  -1.405931E-08
+      80000004      G      1.217497E-09  -1.788753E-11   2.684158E-05   4.705242E-04   1.461560E-06  -2.115662E-08
+      80000005      G      2.162179E-09  -2.635740E-11   4.786615E-05   6.287920E-04   1.432689E-06  -2.823669E-08
+      80000006      G      3.377811E-09  -3.490721E-11   7.494414E-05   7.870493E-04   1.431547E-06  -3.532252E-08
+      80000007      G      4.864464E-09  -4.349815E-11   1.080754E-04   9.453033E-04   1.432909E-06  -4.240902E-08
+      80000008      G      6.622167E-09  -5.210078E-11   1.472598E-04   1.103557E-03   1.434051E-06  -4.949587E-08
+      80000009      G      8.650923E-09  -6.070624E-11   1.924975E-04   1.261811E-03   1.434997E-06  -5.658250E-08
+      80000010      G      1.095071E-08  -6.930608E-11   2.437884E-04   1.420065E-03   1.435749E-06  -6.366828E-08
+      80000011      G      1.352149E-08  -7.788421E-11   3.011325E-04   1.578321E-03   1.437822E-06  -7.075282E-08
+      80000012      G      1.636319E-08  -8.643509E-11   3.645300E-04   1.736584E-03   1.456323E-06  -7.783528E-08
+      80000013      G      1.947565E-08  -9.548006E-11   4.339803E-04   1.894797E-03   1.527476E-06  -8.489348E-08
+      80000014      G      2.285883E-08  -1.065920E-10   5.094764E-04   2.052598E-03   1.420121E-06  -9.184784E-08
+      80000015      G      2.603951E-08  -1.145190E-10   5.804688E-04   2.189275E-03   2.781975E-07  -9.794944E-08
+      80000016      G      2.794243E-08  -1.159450E-10   6.230675E-04   2.265118E-03  -4.771354E-07  -1.014466E-07
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    14
+                                                                                                                                    
+0                                                                                                            SUBCASE 5              
+ 
+                                             D I S P L A C E M E N T   V E C T O R
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+      80000001      G     -5.976849E-12  -3.144369E-11   5.733554E-09   6.227211E-07  -3.490114E-07  -2.354295E-09
+      80000002      G      6.535563E-09  -8.011971E-10   6.091413E-06   8.133398E-04   6.451168E-03  -5.160866E-08
+      80000003      G      2.479802E-08   3.285022E-09   1.311658E-05   9.398452E-04   1.660105E-02  -3.245714E-07
+      80000004      G      5.157219E-08   7.204831E-09   2.190439E-05   9.932095E-04   2.731140E-02  -6.299761E-07
+      80000005      G      8.682590E-08   1.006805E-08   3.136022E-05   9.999170E-04   3.809940E-02  -8.071586E-07
+      80000006      G      1.274885E-07   1.206271E-08   4.088348E-05   9.999855E-04   4.889217E-02  -9.320999E-07
+      80000007      G      1.717696E-07   1.328798E-08   5.040812E-05   9.999963E-04   5.968469E-02  -1.009106E-06
+      80000008      G      2.179911E-07   1.378781E-08   5.993445E-05   1.000032E-03   7.047718E-02  -1.040364E-06
+      80000009      G      2.645277E-07   1.357939E-08   6.946131E-05   1.000024E-03   8.126968E-02  -1.026718E-06
+      80000010      G      3.097627E-07   1.265565E-08   7.898718E-05   1.000011E-03   9.206225E-02  -9.677771E-07
+      80000011      G      3.520420E-07   1.098390E-08   8.851235E-05   1.000034E-03   1.028550E-01  -8.618660E-07
+      80000012      G      3.896293E-07   8.487919E-09   9.800412E-05   9.966001E-04   1.136458E-01  -7.052956E-07
+      80000013      G      4.206448E-07   5.004049E-09   1.070876E-04   9.628881E-04   1.243933E-01  -4.902363E-07
+      80000014      G      4.430552E-07   1.050734E-09   1.147402E-04   8.605617E-04   1.347967E-01  -2.325904E-07
+      80000015      G      4.536270E-07  -3.013906E-10   1.207560E-04   6.243561E-04   1.423325E-01  -6.526136E-08
+      80000016      G      4.551774E-07  -1.037647E-11   1.225760E-04  -4.771354E-05   1.440943E-01  -3.596828E-09
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    15
+                                                                                                                                    
+0                                                                                                            SUBCASE 6              
+ 
+                                             D I S P L A C E M E N T   V E C T O R
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+      80000001      G      3.139682E-11   2.626012E-09   2.504585E-13  -5.200640E-05  -1.423139E-11   1.966184E-07
+      80000002      G     -3.162917E-07  -8.359617E-08  -1.320932E-08  -6.964250E-07  -5.376084E-09   1.579542E-05
+      80000003      G     -1.222314E-06  -1.696667E-07  -5.333289E-08  -1.398511E-06  -2.179197E-09   3.158320E-05
+      80000004      G     -2.732298E-06  -2.556710E-07  -1.205380E-07  -2.115476E-06  -4.281695E-09   4.737005E-05
+      80000005      G     -4.846123E-06  -3.416783E-07  -2.149382E-07  -2.822237E-06  -7.590670E-09   6.315672E-05
+      80000006      G     -7.563787E-06  -4.276858E-07  -3.364484E-07  -3.531196E-06  -7.934190E-09   7.894339E-05
+      80000007      G     -1.088529E-05  -5.136934E-07  -4.850721E-07  -4.239900E-06  -8.052241E-09   9.473009E-05
+      80000008      G     -1.481063E-05  -5.997015E-07  -6.608029E-07  -4.948507E-06  -8.162009E-09   1.105169E-04
+      80000009      G     -1.933982E-05  -6.857103E-07  -8.636370E-07  -5.657004E-06  -8.332352E-09   1.263037E-04
+      80000010      G     -2.447286E-05  -7.717200E-07  -1.093570E-06  -6.365362E-06  -8.576915E-09   1.420906E-04
+      80000011      G     -3.020975E-05  -8.577309E-07  -1.350595E-06  -7.073557E-06  -8.908042E-09   1.578777E-04
+      80000012      G     -3.655049E-05  -9.437433E-07  -1.634707E-06  -7.781566E-06  -9.401564E-09   1.736649E-04
+      80000013      G     -4.349510E-05  -1.029758E-06  -1.945894E-06  -8.489172E-06  -1.027516E-08   1.894524E-04
+      80000014      G     -5.104360E-05  -1.115783E-06  -2.284112E-06  -9.194034E-06  -1.061887E-08   2.052402E-04
+      80000015      G     -5.814321E-05  -1.191568E-06  -2.602080E-06  -9.805097E-06  -5.687672E-09   2.190827E-04
+      80000016      G     -6.239609E-05  -1.232991E-06  -2.792878E-06  -1.014467E-05  -3.594139E-09   2.267527E-04
+1    STATIC ANALYSIS                                                      SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    16
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    T    T    T    T     F      F      T      0     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+ 
+ No PARAM values were set in the Control File.
+ 
+1                                        * * * END OF JOB * * *
+ 
+ 

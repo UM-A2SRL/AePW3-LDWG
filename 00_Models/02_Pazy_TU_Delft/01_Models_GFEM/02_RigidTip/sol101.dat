@@ -1,0 +1,46 @@
+NASTRAN NLINES=999999
+NASTRAN,BARMASS=1,SYSTEM(444)=9
+$
+SOL 101
+$  
+CEND        
+$      
+SET 1 = 80000001 THRU 80000080                                          
+ECHO = NONE
+TITLE = STATIC ANALYSIS 
+DISPLACEMENT(SORT1,REAL) = 1
+RIGID = LAGRAN
+$
+SPC = 1
+SUBCASE 1
+  LOAD = 1001
+SUBCASE 2
+  LOAD = 1002
+SUBCASE 3
+  LOAD = 1003
+SUBCASE 4
+  LOAD = 1004
+SUBCASE 5
+  LOAD = 1005
+SUBCASE 6
+  LOAD = 1006
+$
+BEGIN BULK
+$                                               
+PARAM,POST,0               
+PARAM,AUTOMSET,YES
+PARAM,GRDPNT,0                                      
+MDLPRM,OFFDEF,LROFF
+$
+include fem.bdf
+include bcs.bdf
+$
+include reference_axis_grids.bdf
+include reference_axis_rbe3s_modified.bdf
+$include reference_axis_rbe3s.bdf
+$
+$include tip_rbe2.bdf
+include tip_stif.bdf
+include tip_load.bdf
+$
+ENDDATA

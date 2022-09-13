@@ -1,0 +1,372 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2021 MSC Software Corporation and its licensors. All rights reserved.         
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           MSC Software          * *
+                                              * *               CORP              * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *     Version 2021.1-CL797725     * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          MAR 10, 2021           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *MODEL Xeon/7388 (ae-crrg-307070l * *
+                                              * * Windows 10 Enterprise 6.2 9200  * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+1News file - (February 22, 2021)
+  
+               Welcome to MSC Nastran 2021.1
+  
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions.
+  
+     MSC Nastran 2021.1 Features and Enhancements
+  
+     Statics
+     The original SOL 1 (Legacy Linear Statics solution) Inertia Relief method,
+     allowing for more than six rigid body modes is now available in SOL 101
+     (Linear Statics)
+  
+     Dynamics
+     Real Coupled Modes enhancements:
+      - Supported for AVL Excite EXB Export and acoustic weakly-coupled modes
+      - Residual vector logic tuned up for improved solution accuracy
+        in transient response analysis
+  
+     Fatigue
+     CAE Fatigue Time Domain completeness
+      - Hot Spot detection for computational speed
+      - Spot Weld fatigue analyzer
+  
+     Nonlinear
+     Enhanced accelerated separation check in node-to-segment (N2S) contact
+  
+     Design Optimization
+     - Design response screening option added to force retention of all
+       defined responses in the model
+  
+     High Performance Computing
+     - Improved MUMPS direct solver performance in SOL 101 linear statics
+  
+     Documentation
+     The complete documentation set is provided in a separate installer and
+     when installed is available at: MSC_DOC_DIR/doc/pdf_nastran directory.
+     Where MSC_DOC_DIR is the directory where documentation was installed
+     This help set has cross references between documents, links to how-to
+     videos, and example files.
+  
+     Individual MSC Nastran documents are available for download from the
+       Simcompanion Website at:
+       http://simcompanion.mscsoftware.com/
+  
+     These documents were updated for the MSC Nastran 2021.1 Release
+  
+         1.  MSC Nastran 2021.1 Installation and Operations Guide
+         2.  MSC Nastran 2021.1 Quick Reference Guide
+         3.  MSC Nastran 2021.1 Release Guide
+         4.  MSC Nastran 2021.1 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2021.1 Dynamic Analysis User's Guide
+         6.  MSC Nastran 2021.1 Superelements User's Guide
+         7.  MSC Nastran 2021.1 Rotordynamics User's Guide
+         8.  MSC Nastran 2021.1 Demonstration Problems Manual
+         9.  MSC Nastran 2021.1 Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2021.1 Design Sensitivity and Optimization
+        11.  MSC Nastran 2021.1 Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2021.1 DMAP Programmer's Guide
+        13.  MSC Nastran 2021.1 High Performance Computing User's Guide
+        14.  MSC Nastran 2021.1 New Verification Manual
+        15.  MSC Nastran 2021.1 DEMATD Guide
+        16.  MSC Nastran 2021.1 Explicit Nonlinear (SOL 700) User's Guide
+  
+   Please refer to  MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+   for the complete document set:
+  
+  
+     Feature Deprecation List
+     To streamline the MSC Nastran program and simplify ongoing maintenance
+     activiy, some obsolete capabilities have been identified and tagged for
+     removal from a future release of the program in late 2021 and 2022.
+     Please review the list of features marked for deprecation below to
+     ensure that there will be no disruption to your use of MSC Nastran.
+     If you see a feature that you currently use and do not wish to lose,
+     contact MSC Technical Support to report it.
+  
+     Features tagged for removal:
+     - P-elements
+     - SOL 600 nonlinear solution sequence
+     - Unstructured one- and two-digit solution sequences (e.g. SOL 3, SOL 24)
+     - SOL 190 (DBTRANS)
+     - TAUCS solver
+     - MSGMESH
+     - Obsolete DMAP modules
+     - SSSALTERS
+  
+     Refer to the MSC Nastran 2021 Release Guide for more details.
+  
+  
+   Additional information about the release can be found at the MSC Nastran
+   Product Support page: http://simcompanion.mscsoftware.com
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      http://www.mscsoftware.com/Contents/Services/Training/
+  
+1                                                                         SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     $ SYSFIELD=SCR*(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(C:/PROGRAM FILES/MSC.SO
+     $ SYSFIELD=DBALL(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(C:/PROGRAM FILES/MSC.S
+     NASTRAN BUFFSIZE=32769 $(C:/PROGRAM FILES/MSC.SOFTWARE/MSC_NASTRAN/2021.1/CONF/N
+     NASTRAN NLINES=999999                                                           
+     $                                                                               
+     $ ASSIGNING OUTPUT FILE NAMES                                                   
+     $                                                                               
+     ASSIGN PUNCH='sol103_coor.txt',FORM=FORMATTED,                                  
+            STATUS=UNKNOWN,UNIT=91                                                   
+     ASSIGN PUNCH='sol103_mass.txt',FORM=FORMATTED,                                  
+            STATUS=UNKNOWN,UNIT=92                                                   
+     $                                                                               
+1                                                                         SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     DIAG 8                                                                                  
+     SOL 103                                                                                 
+     $                                                                                       
+     $ ALTER FOR EXTRACTING COORDINATES AND MGG                                              
+     $                                                                                       
+     COMPILE PHASE1DR NOLIST NOREF                                                           
+     ALTER 350                                                                               
+     TYPE PARM,,I,N,PCHORIG                                                                  
+     PCHORIG = GETSYS(PCHORIG,64)                                                            
+     PUTSYS(92,64)                                                                           
+     MATMOD MGG,EQEXINS,USET0,,,/,/16/1         $                                            
+     PUTSYS(PCHORIG,64)                                                                      
+     VECPLOT   ,,BGPDTS,SCSTM,CSTMS,,,,/LOC///3 $                                            
+     PUTSYS(91,64)                                                                           
+     MATMOD LOC,EQEXINS,USET0,,,/,/16/1         $                                            
+     PUTSYS(PCHORIG,64)                                                                      
+     $                                                                                       
+     CEND                                                                                    
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $                                                                                       
+                  2      ECHO = NONE                                                                             
+                  3      TITLE = NORMAL MODES ANALYSIS                                                           
+                  4      METHOD = 1000                                                                           
+                  5      VECTOR(PLOT) = ALL                                                                      
+                  6      SPC = 2000                                                                              
+                  7      $                                                                                       
+                  8      BEGIN BULK                                                                              
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                              I N P U T   B U L K   D A T A   E C H O                                               
+                 ENTRY                                                                                                              
+                 COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\FEM.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\FEM.BDF"
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\BCS.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\BCS.BDF"
+                              $INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\TIP_STIF.BDF"
+                              $END OF INCLUDE "c:\Users\criso3\Repositories\08_Research\AePW3\01_EF2S\Wing_3\Skin_September2022\inp\select_rbe3_ra_44_nodes_16\TIP_STIF.BDF"
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                        CBEAM                      937
+                                       CQUAD4                     1938
+                                       CTRIA3                      152
+                                        EIGRL                        1
+                                         GRID                     3050
+                                         MAT1                        3
+                                        PARAM                        2
+                                        PBEAM                       14
+                                       PSHELL                        3
+                                         RBE2                      103
+                                         SPC1                        1
+                                       SPCADD                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+                           O U T P U T   F R O M   G R I D   P O I N T   W E I G H T   G E N E R A T O R
+0                                                     REFERENCE POINT =        0
+                                                                M O
+                      *  2.870035E-01  1.485125E-21  2.504041E-20  5.254949E-21 -8.352750E-06 -8.923441E-02 *
+                      *  1.485125E-21  2.870035E-01  6.623907E-24  8.352750E-06 -5.168320E-25  1.263094E-02 *
+                      *  2.504041E-20  6.623907E-24  2.870035E-01  8.923441E-02 -1.263094E-02 -5.254429E-21 *
+                      *  5.254949E-21  8.352750E-06  8.923441E-02  3.619862E-02 -3.943268E-03  2.066033E-07 *
+                      * -8.352750E-06 -5.168320E-25 -1.263094E-02 -3.943268E-03  8.256769E-04  3.454843E-06 *
+                      * -8.923441E-02  1.263094E-02 -5.254429E-21  2.066033E-07  3.454843E-06  3.702021E-02 *
+                                                                 S
+                                           *  1.000000E+00  0.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  1.000000E+00  0.000000E+00 *
+                                           *  0.000000E+00  0.000000E+00  1.000000E+00 *
+                               DIRECTION
+                          MASS AXIS SYSTEM (S)     MASS              X-C.G.        Y-C.G.        Z-C.G.
+                                  X            2.870035E-01      1.830970E-20  3.109175E-01 -2.910330E-05
+                                  Y            2.870035E-01      4.400970E-02 -1.800786E-24 -2.910330E-05
+                                  Z            2.870035E-01      4.400970E-02  3.109175E-01 -1.830789E-20
+                                                                I(S)
+                                           *  8.454089E-03  1.608758E-05  1.609988E-07 *
+                                           *  1.608758E-05  2.697927E-04 -8.578276E-07 *
+                                           *  1.609988E-07 -8.578276E-07  8.719796E-03 *
+                                                                I(Q)
+                                           *  8.719796E-03                             *
+                                           *                2.697610E-04               *
+                                           *                              8.454121E-03 *
+                                                                 Q
+                                           *  6.121437E-04  1.965653E-03  9.999979E-01 *
+                                           * -1.026834E-04  9.999981E-01 -1.965591E-03 *
+                                           * -9.999998E-01 -1.014800E-04  6.123444E-04 *
+
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+0 RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ *** USER INFORMATION MESSAGE 5010 (LNCILS)
+     STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
+     TRIAL EIGENVALUE = 5.326191D+04, CYCLES = 3.673064D+01 THE STURM COUNT = 3
+ *** USER INFORMATION MESSAGE 5010 (LNCILS)
+     STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
+     TRIAL EIGENVALUE = 3.087815D+06, CYCLES = 2.796699D+02 THE STURM COUNT = 10
+
+ TABLE OF SHIFTS:  (LNNRIGL)
+ SHIFT #        SHIFT VALUE         FREQUENCY, CYCLES     # EIGENVALUES BELOW    # NEW EIGENVALUES FOUND
+     1.        5.3261907E+04          3.6730639E+01                 3                       10
+     2.        3.0878149E+06          2.7966992E+02                10                        0
+
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+0
+
+
+                          E I G E N V A L U E  A N A L Y S I S   S U M M A R Y   (READ MODULE) 
+
+
+
+                                     BLOCK SIZE USED ......................     7
+
+                                     NUMBER OF DECOMPOSITIONS .............     2
+
+                                     NUMBER OF ROOTS FOUND ................    10
+
+                                     NUMBER OF SOLVES REQUIRED ............     8
+
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+ 
+                                              R E A L   E I G E N V A L U E S
+   MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
+    NO.       ORDER                                                                       MASS              STIFFNESS
+        1         1        4.642091E+02        2.154551E+01        3.429075E+00        1.000000E+00        4.642091E+02
+        2         2        2.053628E+04        1.433049E+02        2.280768E+01        1.000000E+00        2.053628E+04
+        3         3        3.864484E+04        1.965829E+02        3.128714E+01        1.000000E+00        3.864484E+04
+        4         4        1.711738E+05        4.137316E+02        6.584742E+01        1.000000E+00        1.711738E+05
+        5         5        4.459893E+05        6.678243E+02        1.062875E+02        1.000000E+00        4.459893E+05
+        6         6        5.523742E+05        7.432188E+02        1.182869E+02        1.000000E+00        5.523742E+05
+        7         7        6.813419E+05        8.254344E+02        1.313720E+02        1.000000E+00        6.813419E+05
+        8         8        1.774937E+06        1.332268E+03        2.120370E+02        1.000000E+00        1.774937E+06
+        9         9        1.894606E+06        1.376447E+03        2.190684E+02        1.000000E+00        1.894606E+06
+       10        10        1.937883E+06        1.392078E+03        2.215562E+02        1.000000E+00        1.937883E+06
+1    NORMAL MODES ANALYSIS                                                SEPTEMBER  10, 2022  MSC Nastran  3/10/21   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     74
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    T    T    T    T     T      F      T      0     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+ 
+ No PARAM values were set in the Control File.
+ 
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+
