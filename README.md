@@ -25,7 +25,7 @@ Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its prope
 * `06_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
 * `07_Nonlinear_Flutter`: Nonlinear flutter analysis for AoA = 0 -> 7 deg
 
-## Folders associated with Riso and Cesnik, IFASD, 2022 (to appear):
+## Folders associated with Riso and Cesnik, IFASD, 2022:
 
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
 * `02_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
