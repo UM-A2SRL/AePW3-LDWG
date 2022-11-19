@@ -1,0 +1,48 @@
+NASTRAN NLINES=999999
+$
+SOL 400
+CEND
+$
+SET 1 = 80000001 THRU 80000080
+ECHO = NONE
+DISPLACEMENT(SORT1,REAL) = 1
+RIGID = LAGRAN
+$
+SPC = 2000
+SUBCASE 1
+  STEP 1
+  ANALYSIS = NLSTAT
+  LOAD = 1001
+  NLPARM = 1100
+  STEP 2
+  ANALYSIS = MODES
+  METHOD = 4000
+$
+BEGIN BULK
+$
+PARAM,POST,-1
+PARAM,GRDPNT,0
+PARAM,MAXRATIO,1.+4
+PARAM,AUTOSPC,YES
+$
+PARAM,LGDISP,1
+PARAM,NLTOL,2
+$
+EIGRL,4000,,,10                 
+$
+NLPARM,1100,10,,FNT,-1,100,,NO
+$
+SPCADD,2000,1
+$
+include fem_noskin_stiftip.bdf
+include tip_rbe2_noskin.bdf
+include bcs_noskin.bdf
+$
+include reference_axis_grids.bdf
+include reference_axis_rbe3s_noskin.bdf
+$
+LOAD,1001,1.0,1.0,2001
+$
+GRAV,2001,,9.807,0.0,0.0,-1.0
+$
+ENDDATA
