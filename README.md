@@ -22,19 +22,27 @@ Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its prope
 * `03_Static_Bending`: Static bending results due to a tip mass at the midchord point 
 * `04_Static_Torsion`: Static torsion results due to a tip mass behind the trailing egde point 
 * `05_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
-* `06_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
-* `07_Nonlinear_Flutter`: Nonlinear flutter analysis for AoA = 0 -> 7 deg
+* `06_Flutter_Undeformed`: Flutter analysis of undeformed shape 
+* `07_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
 
 ## Folders associated with Riso and Cesnik, IFASD, 2022:
 
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
-* `02_Linear_Flutter`: Linear flutter analysis (undeformed shape) 
-* `03_Nonlinear_Flutter`: Nonlinear flutter analysis for AoA = 0 -> 7 deg
-* `04_Dynamic_Aeroelastic`: Nonlinear flutter analysis for AoA = 5, 7 deg
+* `02_Flutter`: Flutter analysis of undeformed shape 
+* `03_Flutter`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
+* `04_Dynamic_Aeroelastic`: Nonlinear dynamic analysis for AoA = 5, 7 deg
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
 
-## Folders associated with Riso and Cesnik, Journal of Aircraft, 2023 (based on the above SciTech paper):
+## Folders associated with Riso and Cesnik, Journal of Aircraft, to appear (based on the above SciTech paper):
+
+* `01_Modal_Undeformed`: Modal results in undeformed shape 
+* `02_Modal_Gravity`: Modal results in statically deformed shape under self weight 
+* `03_Static_Bending`: Static bending results due to a tip mass at the midchord point 
+* `04_Static_Torsion`: Static torsion results due to a tip mass behind the trailing egde point 
+* `05_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
+* `06_Flutter_Undeformed`: Flutter analysis of undeformed shape 
+* `07_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
 
