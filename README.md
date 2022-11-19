@@ -15,7 +15,7 @@ The built-up finite element model of the TU Delft Pazy wing with flexible tip ro
 
 Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its properties are tuned based on the GVT of the Pazy wing model with skin tested at TU Delft. 
 
-## Folders associated with Riso and Cesnik, AIAA SciTech Forum, 2022 (also Riso and Cesnik, Journal of Aircraft, under review):
+## Folders associated with Riso and Cesnik, AIAA SciTech Forum, 2022:
 
 * `01_Modal_Undeformed`: Modal results in undeformed shape 
 * `02_Modal_Gravity`: Modal results in statically deformed shape under self weight 
@@ -34,6 +34,10 @@ Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its prope
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
 
+## Folders associated with Riso and Cesnik, Journal of Aircraft, 2023 (based on the above SciTech paper):
+
+The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
+
 ## References 
 
 If you use the Technion Pazy wing model properties and related analysis results, please cite our papers as appropriate:
@@ -42,7 +46,9 @@ Riso, C. and Cesnik, C. E. S., "Low-Order Geometrically Nonlinear Aeroelastic Mo
 
 Riso, C. and Cesnik, C. E. S., "Post-Flutter Dynamics of the Pazy Wing Geometrically Nonlinear Benchmark Model," IFASD, Madrid, Spain, June 13-17, 2022. IFASD-2022-073. 
 
-If you use the TU Delft Pazy wing  model properties, please cite this repository as the source.
+Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Solution Accuracy for Very Flexible Wings," Journal of Aircraft, to appear. 
+
+If you use the TU Delft Pazy wing model properties, please cite this repository as the source.
 
 ## Contacts 
 
