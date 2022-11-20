@@ -39,6 +39,6 @@ K24 = torsion-in-plane bending coupling
 
 K34 - out-of-plane-in-plane-bending coupling
 
-For details about how these properties are obtained, see Riso and Cesnik, AIAA SciTech Forum, 2021 & 2022. 
+The process used for obtaining these properties is the same as described in Riso and Cesnik, AIAA SciTech Forum, 2022. 
 
 Differently from the Technion Pazy wing, these properties are all obtained on 16 reference axis nodes (instead of a mix of 16 and 6 nodes) because that gave the best frequency comparison.
