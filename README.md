@@ -62,6 +62,10 @@ Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Solu
 
 If you use the TU Delft Pazy wing model properties, please cite this repository.
 
+## Issues
+
+If you have any issues with the models, or find mistakes in the uploaded data, please do not hesitate to reach out.
+
 ## Contacts 
 
 Cristina Riso (criso@gatech.edu) and Carlos E. S. Cesnik (cesnik@umich.edu)
