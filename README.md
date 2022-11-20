@@ -1,19 +1,23 @@
 # AePW3-LDWG
 
-This repository stores the data associated with our publications resulting from the Third Aeroelastic Prediction Workshop Large Deflection Working Group.
+This repository stores the data associated with our publications resulting from the Third Aeroelastic Prediction Workshop (AePW3) Large Deflection Working Group (LDWG).
 
 ## Wing models
 
-* `01_Pazy_Technion`: Pazy wing version from Technion (this model is used in the Riso and Cesnik publications)
+* `01_Pazy_Technion`: Pazy wing version from Technion (this model is used in the Riso and Cesnik publications to date)
 * `02_Pazy_TU_Delft`: Pazy wing version from TU Delft     
 
-The model folders contain the Nastran GFEMs along with the equivalent beam properties used in our analyses.
+The model folders contain the Nastran GFEMs and the equivalent beam properties used in our analyses.
 
-The built-up finite element models of the Technion Pazy wing with flexible tip rod were originally provided by Prof. Daniella Raveh (Technion). Variants with rigid tip rod were developed by us to ease the equivalent beam modeling.
+The built-up finite element models of the Technion Pazy wing with flexible tip rod were provided by Prof. Daniella Raveh (Technion). We developed variants with rigid tip rod to ease the equivalent beam modeling.
 
-The built-up finite element model of the TU Delft Pazy wing with flexible tip rod was originally provided by Christoph Mertens (TU Delft). Again, rigid-tip variants were developed by us to ease the equivalent beam modeling.
+The built-up finite element model of the TU Delft Pazy wing with flexible tip rod was provided by Christoph Mertens (TU Delft). Again, we developed rigid-tip variants for equivalent beam modeling.
 
-Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its properties are tuned based on the GVT of the Pazy wing model with skin tested at TU Delft. 
+Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its properties were tuned at TU Delft based on the GVT of the TU Delf Pazy wing with skin.
+
+Please note that we were not involved in the updating of these built-up FEMs. If you have questions regarding that, please contact Prof. Daniella Raveh (Technion Pazy wing) or Christoph Mertens (TU Delft Pazy wing). 
+
+We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciTech 2021 paper. That wing model is not included here because it was discontinued by the AePW3-LDWG. 
 
 ## Folders associated with Riso and Cesnik, AIAA SciTech Forum, 2022:
 
@@ -56,7 +60,7 @@ Riso, C. and Cesnik, C. E. S., "Post-Flutter Dynamics of the Pazy Wing Geometric
 
 Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Solution Accuracy for Very Flexible Wings," Journal of Aircraft, to appear. 
 
-If you use the TU Delft Pazy wing model properties, please cite this repository as the source.
+If you use the TU Delft Pazy wing model properties, please cite this repository.
 
 ## Contacts 
 
