@@ -1,3 +1,5 @@
+The folders contain the results from the built-up finite element model and UM/NAST.
+
 The results are in the form of deformed configurations and tip sweeps.
 
 The deformed configuration files list the spanwise and vertical positions in the columns (in this order). Vertical positions are given in % semispan.
@@ -19,7 +21,7 @@ The experimental data are from the Technion tests and only include sweep results
 
 For further details on the numerical results, see Riso and Cesnik, AIAA SciTech Forum, 2022 and Journal of Aircraft (to appear).
 
-The experimental results are obtained by Avin et. al, AIAA Journal, 2022, and specific references to their Tables are included in our paper.
+The experimental results are reported by Avin et. al, AIAA Journal, 2022, and specific references to their Tables are included in our paper.
 
 Note that we were not involved in the experiments. If you have questions about the experimental data, please reach out to Prof. Daniella Raveh (Technion).
 

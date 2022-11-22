@@ -1,3 +1,5 @@
+The folders contain the results from the built-up finite element model and UM/NAST.
+
 The results are in the form of instability points (comparison table) and frequency and damping evolutions.
 
 The comparison table shows the flutter and divergence points for different models and flutter mechanisms.
