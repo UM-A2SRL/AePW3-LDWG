@@ -19,7 +19,7 @@ Please note that we were not involved in the updating of these built-up FEMs. If
 
 We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciTech 2021 paper. That wing model is not included here because it was discontinued by the AePW3-LDWG. 
 
-## Folders associated with Riso and Cesnik, AIAA SciTech Forum, 2022:
+## Riso and Cesnik, AIAA SciTech Forum, 2022:
 
 * `01_Modal_Undeformed`: Modal results in undeformed shape 
 * `02_Modal_Gravity`: Modal results in statically deformed shape under self weight 
@@ -29,7 +29,7 @@ We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciT
 * `06_Flutter_Undeformed`: Flutter analysis of undeformed shape 
 * `07_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
 
-## Folders associated with Riso and Cesnik, IFASD, 2022:
+## Riso and Cesnik, IFASD, 2022:
 
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
 * `02_Flutter`: Flutter analysis of undeformed shape 
@@ -38,7 +38,7 @@ We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciT
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
 
-## Folders associated with Riso and Cesnik, Journal of Aircraft, to appear (based on the above SciTech paper):
+## Riso and Cesnik, Journal of Aircraft, 2022, to appear (based on the above SciTech paper):
 
 * `01_Modal_Undeformed`: Modal results in undeformed shape 
 * `02_Modal_Gravity`: Modal results in statically deformed shape under self weight 
@@ -49,6 +49,10 @@ The beam model used for these results is the same as for Riso and Cesnik, AIAA S
 * `07_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
+
+## Riso and Cesnik, AIAA SciTech Forum, 2023, to appear:
+
+Thank you for your interest in these results. We are in the process of finalizing the post-processed data for distribution, and we will complete the upload soon. 
 
 ## References 
 
@@ -58,7 +62,7 @@ Riso, C. and Cesnik, C. E. S., "Low-Order Geometrically Nonlinear Aeroelastic Mo
 
 Riso, C. and Cesnik, C. E. S., "Post-Flutter Dynamics of the Pazy Wing Geometrically Nonlinear Benchmark Model," IFASD, Madrid, Spain, June 13-17, 2022. IFASD-2022-073. 
 
-Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Solution Accuracy for Very Flexible Wings," Journal of Aircraft, to appear. 
+Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Predictions for Very Flexible Wings," Journal of Aircraft, to appear. 
 
 If you use the TU Delft Pazy wing model properties, please cite this repository.
 
