@@ -62,7 +62,7 @@ Riso, C. and Cesnik, C. E. S., "Low-Order Geometrically Nonlinear Aeroelastic Mo
 
 Riso, C. and Cesnik, C. E. S., "Post-Flutter Dynamics of the Pazy Wing Geometrically Nonlinear Benchmark Model," IFASD, Madrid, Spain, June 13-17, 2022. IFASD-2022-073. 
 
-Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Predictions for Very Flexible Wings," Journal of Aircraft, to appear. 
+Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Predictions for Very Flexible Wings," Journal of Aircraft, 2023. DOI: https://doi.org/10.2514/1.C036869. 
 
 If you use the TU Delft Pazy wing model properties, please cite this repository.
 
