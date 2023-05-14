@@ -21,6 +21,8 @@ We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciT
 
 ## Riso and Cesnik, AIAA SciTech Forum, 2022
 
+The results reported in this paper have been published in an extended and revised form in Riso and Cesnik, Journal of Aircraft, 2023. You may want to refer to that paper for the most up-to-date and extensive set of results.
+
 * `01_Modal_Undeformed`: Modal results in undeformed shape 
 * `02_Modal_Gravity`: Modal results in statically deformed shape under self weight 
 * `03_Static_Bending`: Static bending results due to a tip mass at the midchord point 
@@ -31,6 +33,8 @@ We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciT
 
 ## Riso and Cesnik, IFASD, 2022
 
+The results reported in this paper have been published in an extended and revised form in Riso and Cesnik, Journal of Fluids and Structures, 2023. You may want to refer to that paper for the most up-to-date and extensive set of results.
+
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
 * `02_Flutter`: Flutter analysis of undeformed shape 
 * `03_Flutter`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
@@ -38,7 +42,7 @@ We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciT
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
 
-The aerodynamic properties used for these results are in the static aeroelastic folder.
+The spanwise-varying aerodynamic coefficient derivatives used for these results are in the static aeroelastic folder.
 
 ## Riso and Cesnik, Journal of Aircraft, 2023
 
@@ -54,15 +58,15 @@ The beam model used for these results is the same as for Riso and Cesnik, AIAA S
 
 ## Riso and Cesnik, AIAA SciTech Forum, 2023
 
-Please see the journal paper below. 
-
-The beam model used for these results is the same as for Riso and Cesnik, Journal of Aircraft, 2023.
+Please see the journal paper below for these results. 
 
 ## Riso and Cesnik, Journal of Fluids and Structures, 2023
 
-Thank you for your interest in these results. We are in the process of finalizing the post-processed data for distribution, and we will complete the upload soon. 
-
 For the modal and static structural results, please see Riso and Cesnik, Journal of Aircraft, 2023.
+
+For all the results obtained using UM/NAST with tip loss factors, UM/NAST-VLM, and Nastran solvers also please see Riso and Cesnik, Journal of Aircraft, 2023.
+
+The new results reported in this paper obtained using UM/NAST with spanwise-varying aerodynamic coefficient derivatives and different combinations of geometrically nonlinear effects are given in the following folders.
 
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
 * `02_Flutter_Undeformed`: Flutter analysis of undeformed shape 
@@ -71,7 +75,7 @@ For the modal and static structural results, please see Riso and Cesnik, Journal
 
 The beam model used for these results is the same as for Riso and Cesnik, Journal of Aircraft, 2023.
 
-The aerodynamic properties used for these results are in the static aeroelastic folder.
+The spanwise-varying aerodynamic coefficient derivatives used for these results are in the static aeroelastic folder.
 
 ## References 
 
@@ -91,7 +95,7 @@ If you use the TU Delft Pazy wing model properties, please cite this repository.
 
 ## Issues
 
-If you have any issues with the models, or find mistakes in the uploaded data, please do not hesitate to reach out.
+If you have any issues with the models, find mistakes in the uploaded data, or have any questions, please do not hesitate to reach out.
 
 ## Contacts 
 
