@@ -17,7 +17,7 @@ Note that the TU Delft Pazy wing Nastran GFEM is without the skin, but its prope
 
 Please note that we were not involved in the updating of these built-up FEMs. If you have questions regarding that, please contact Prof. Daniella Raveh (Technion Pazy wing) or Christoph Mertens (TU Delft Pazy wing). 
 
-We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciTech 2021 paper. That wing model is not included here because it was discontinued by the AePW3-LDWG. 
+We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciTech 2021 paper. That wing model is not included here because it was discontinued. 
 
 ## Riso and Cesnik, AIAA SciTech Forum, 2022
 
@@ -34,9 +34,11 @@ We used an earlier version of the Pazy wing, known as Pre-Pazy wing, in our SciT
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
 * `02_Flutter`: Flutter analysis of undeformed shape 
 * `03_Flutter`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
-* `04_Dynamic_Aeroelastic`: Nonlinear dynamic analysis for AoA = 5, 7 deg
+* `04_Dynamic_Aeroelastic`: Dynamic aeroelastic results for AoA = 5, 7 deg
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
+
+The aerodynamic properties used for these results are in the static aeroelastic folder.
 
 ## Riso and Cesnik, Journal of Aircraft, 2023
 
@@ -50,9 +52,26 @@ The beam model used for these results is the same as for Riso and Cesnik, AIAA S
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
 
-## Riso and Cesnik, Journal of Fluids and Structures, 2023, to appear
+## Riso and Cesnik, AIAA SciTech Forum, 2023
+
+Please see the journal paper below. 
+
+The beam model used for these results is the same as for Riso and Cesnik, Journal of Aircraft, 2023.
+
+## Riso and Cesnik, Journal of Fluids and Structures, 2023
 
 Thank you for your interest in these results. We are in the process of finalizing the post-processed data for distribution, and we will complete the upload soon. 
+
+For the modal and static structural results, please see Riso and Cesnik, Journal of Aircraft, 2023.
+
+* `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
+* `02_Flutter_Undeformed`: Flutter analysis of undeformed shape 
+* `03_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
+* `04_Dynamic_Aeroelastic`: Dynamic aeroelastic results for AoA = 5, 7 deg
+
+The beam model used for these results is the same as for Riso and Cesnik, Journal of Aircraft, 2023.
+
+The aerodynamic properties used for these results are in the static aeroelastic folder.
 
 ## References 
 
@@ -65,6 +84,8 @@ Riso, C. and Cesnik, C. E. S., "Post-Flutter Dynamics of the Pazy Wing Geometric
 Riso, C. and Cesnik, C. E. S., "Impact of Low-Order Modeling on Aeroelastic Predictions for Very Flexible Wings," Journal of Aircraft, 2023. DOI: https://doi.org/10.2514/1.C036869. 
 
 Riso, C. and Cesnik, C. E. S., "Investigation of Geometrically Nonlinear Effects in the Aeroelastic Behavior of a Very Flexible Wing," AIAA SciTech Forum, National Harbor, MD and Online, January 23-27, 2023. AIAA-2023-0759. DOI: https://doi.org/10.2514/6.2023-0759
+
+Riso, C. and Cesnik, C. E. S., "Geometrically Nonlinear Effects in Wing Aeroelastic Dynamics at Large Deflections," Journal of Fluids and Structures, 2023. DOI: https://doi.org/10.1016/j.jfluidstructs.2023.103897.
 
 If you use the TU Delft Pazy wing model properties, please cite this repository.
 
