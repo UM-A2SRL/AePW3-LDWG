@@ -1,4 +1,4 @@
-# AePW3-LDWG
+# AePW3 LDWG
 
 This repository stores the data associated with our publications resulting from the Third Aeroelastic Prediction Workshop (AePW3) Large Deflection Working Group (LDWG).
 
