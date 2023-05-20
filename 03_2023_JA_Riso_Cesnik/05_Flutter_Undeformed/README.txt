@@ -10,7 +10,7 @@ The frequency and damping evolution files shows the flow speed and the frequency
 The SOL 145 files used to obtain the GFEM results are included in the corresponding folders.
 
 
-For further details on the numerical results, see Riso and Cesnik, AIAA SciTech Forum, 2022 and Journal of Aircraft (to appear).
+For further details on the numerical results, see Riso and Cesnik, AIAA SciTech Forum, 2022 and Journal of Aircraft, 2023.
 
 There is no experimental data for the flutter in undeformed shape. However, the SOL 145 results with 3D aerodynamics (DLM) compare well with the numerical ones by Avit et al., AIAA Journal, 2022. 
 

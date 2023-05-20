@@ -19,7 +19,7 @@ The results for the GFEM are obtained by recovering the displacements of the bea
 The experimental data are from the Technion tests and only include sweep results for the tip vertical displacement and twist angle (for torsion only). 
 
 
-For further details on the numerical results, see Riso and Cesnik, AIAA SciTech Forum, 2022 and Journal of Aircraft (to appear).
+For further details on the numerical results, see Riso and Cesnik, AIAA SciTech Forum, 2022 and Journal of Aircraft, 2023.
 
 The experimental results are reported by Avin et. al, AIAA Journal, 2022, and specific references to their Tables are included in our paper.
 

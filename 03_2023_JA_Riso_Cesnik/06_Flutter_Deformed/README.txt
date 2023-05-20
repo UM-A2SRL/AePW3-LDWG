@@ -14,7 +14,7 @@ All flutter speeds are in m/s and all flutter frequencies are in Hz.
 No GFEM results are available for this case. 
 
 
-For further details on the numerical results, see Riso and Cesnik, AIAA SciTech Forum, 2022 and Journal of Aircraft (to appear).
+For further details on the numerical results, see Riso and Cesnik, AIAA SciTech Forum, 2022 and Journal of Aircraft, 2023.
 
 The experimental results are reported by Drachinsky and Raveh, AIAA Journal, 2022.
 
