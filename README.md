@@ -2,6 +2,10 @@
 
 This repository stores the data associated with our publications resulting from the Third Aeroelastic Prediction Workshop (AePW3) Large Deflection Working Group (LDWG).
 
+Please refer to each publications for details on how the results are obtained.
+
+In general, displacements are given at the half chord and twist angles are recovered from the differential positions of the leading and trailing edges. 
+
 ## Wing models
 
 * `01_Pazy_Technion`: Pazy wing version from Technion 
@@ -36,8 +40,8 @@ The results reported in this paper have been published in an extended and revise
 The results reported in this paper have been published in an extended and revised form in Riso and Cesnik, Journal of Fluids and Structures, 2023. You may want to refer to that paper for the most up-to-date and extensive set of results.
 
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
-* `02_Flutter`: Flutter analysis of undeformed shape 
-* `03_Flutter`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
+* `02_Flutter_Undeformed`: Flutter analysis of undeformed shape 
+* `03_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
 * `04_Dynamic_Aeroelastic`: Dynamic aeroelastic results for AoA = 5, 7 deg
 
 The beam model used for these results is the same as for Riso and Cesnik, AIAA SciTech Forum, 2022.
@@ -69,9 +73,10 @@ For all the results obtained using UM/NAST with tip loss factors, UM/NAST-VLM, a
 The new results reported in this paper obtained using UM/NAST with spanwise-varying aerodynamic coefficient derivatives and different combinations of geometrically nonlinear effects are given in the following folders.
 
 * `01_Static_Aeroelastic`: Static aeroelastic results for AoA = 5, 7 deg
-* `02_Flutter_Undeformed`: Flutter analysis of undeformed shape 
-* `03_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
-* `04_Dynamic_Aeroelastic`: Dynamic aeroelastic results for AoA = 5, 7 deg
+* `02_Modal_Deformed`: Natural frequencies associated with static aeroelastic results for AoA = 7 deg
+* `03_Flutter_Undeformed`: Flutter analysis of undeformed shape 
+* `04_Flutter_Deformed`: Flutter analysis of deformed shape for AoA = 0 -> 7 deg
+* `05_Dynamic_Aeroelastic`: Dynamic aeroelastic results for AoA = 5, 7 deg
 
 The beam model used for these results is the same as for Riso and Cesnik, Journal of Aircraft, 2023.
 
