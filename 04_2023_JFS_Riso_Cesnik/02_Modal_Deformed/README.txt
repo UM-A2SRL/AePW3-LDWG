@@ -19,3 +19,5 @@ modal_deformed_aoa7_UM_NAST_sweep_lin_nf = linear kinematics and nonfollower aer
 Results labeled as UVLM are for the beam model coupled with the VLM (UM/NAST-VLM model) and are fully nonlinear (nonlinear kinematics and follower aerodynamics)
 
 Results labeled as GFEM are for the built-up FEM subject to converged UM/NAST-VLM loads analyzed in SOL 400 and are fully nonlinear (nonlinear kinematics and follower aerodynamics)
+
+The last two results above are for the model without skin.
