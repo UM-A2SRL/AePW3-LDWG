@@ -1,6 +1,6 @@
-# AePW3 LDWG
+# AePW LDWG
 
-This repository stores the data associated with our publications resulting from the Third Aeroelastic Prediction Workshop (AePW3) Large Deflection Working Group (LDWG).
+This repository stores the data associated with our publications resulting from the Aeroelastic Prediction Workshop (AePW3) Large Deflection Working Group (LDWG).
 
 Please refer to each publications for details on how the results are obtained.
 
@@ -82,6 +82,14 @@ The beam model used for these results is the same as for Riso and Cesnik, Journa
 
 The spanwise-varying aerodynamic coefficient derivatives used for these results are in the static aeroelastic folder.
 
+## Sanghi, Riso, and Cesnik, International Forum on Aeroelasticity and Structural Dynamics, 2024
+
+Results coming soon...
+
+The beam model used for these results is based on the TU Delft Pazy wing built-up FEM with rigid tip rod.
+
+The spanwise-varying aerodynamic coefficient derivatives used for these results are the same as previously used for the Technion Pazy wing.
+
 ## References 
 
 If you use the Technion Pazy wing model properties and related analysis results, please cite our papers as appropriate:
@@ -96,7 +104,9 @@ Riso, C. and Cesnik, C. E. S., "Investigation of Geometrically Nonlinear Effects
 
 Riso, C. and Cesnik, C. E. S., "Geometrically Nonlinear Effects in Wing Aeroelastic Dynamics at Large Deflections," Journal of Fluids and Structures, 2023. DOI: https://doi.org/10.1016/j.jfluidstructs.2023.103897.
 
-If you use the TU Delft Pazy wing model properties, please cite this repository.
+If you use the TU Delft Pazy wing model properties, please cite our paper:
+
+Sanghi, D., Riso, C., and Cesnik, C. E. S., "Evaluation of Aeroelastic Models for Gust Response Prediction in Very Flexible Wings," International Forum on Aeroelasticity and Structural Dynamics, 2024.
 
 ## Issues
 
@@ -105,5 +115,7 @@ If you have any issues with the models, find mistakes in the uploaded data, or h
 ## Contacts 
 
 Cristina Riso (criso@gatech.edu) 
+
+Divya Sanghi (dsanghi@gatech.edu)
 
 Carlos E. S. Cesnik (cesnik@umich.edu)
