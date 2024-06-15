@@ -82,7 +82,7 @@ The beam model used for these results is the same as for Riso and Cesnik, Journa
 
 The spanwise-varying aerodynamic coefficient derivatives used for these results are in the static aeroelastic folder.
 
-## Sanghi, Riso, and Cesnik, International Forum on Aeroelasticity and Structural Dynamics, 2024
+## Sanghi, Riso, and Cesnik, IFASD, 2024
 
 Results coming soon...
 
