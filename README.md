@@ -106,7 +106,7 @@ Riso, C. and Cesnik, C. E. S., "Geometrically Nonlinear Effects in Wing Aeroelas
 
 If you use the TU Delft Pazy wing model properties, please cite our paper:
 
-Sanghi, D., Riso, C., and Cesnik, C. E. S., "Evaluation of Aeroelastic Models for Gust Response Prediction in Very Flexible Wings," International Forum on Aeroelasticity and Structural Dynamics, 2024.
+Sanghi, D., Riso, C., and Cesnik, C. E. S., "Evaluation of Aeroelastic Models for Gust Response Prediction in Very Flexible Wings," IFASD, The Hague, The Netherlands, June 18-21, 2024. IFASD-2024-035. 
 
 ## Issues
 
