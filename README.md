@@ -116,6 +116,6 @@ If you have any issues with the models, find mistakes in the uploaded data, or h
 
 Cristina Riso (criso@gatech.edu) 
 
-Divya Sanghi (dsanghi@gatech.edu)
+Divya Sanghi (dsanghi@umich.edu)
 
 Carlos E. S. Cesnik (cesnik@umich.edu)
